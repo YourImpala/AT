@@ -16,6 +16,7 @@ public class Tests extends WebDriverSettings{
     private String travelInsuranceSelector = "//a[@class = 'kitt-top-menu__link kitt-top-menu__link_second'][contains(text(), 'Страхование путешественников')]";
     private String travelInsuranceTitleSelector = "//div[contains(@class, 'kit-col_lg-top_40')]/h1";
     private String arrangeOnlineSelector = "//div[@class='product-teaser-full-width__button']";
+
     private String minimumInsuranceSelector = "//h3[contains(text(), 'Минимальная')]/parent::node()";
     private String takeOutInsuranceSelector = "//button[@class='btn btn-primary btn-large']";
 
