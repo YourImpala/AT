@@ -9,7 +9,7 @@ import ru.sberbank.ex2.GeneralMethods;
 
 import java.util.List;
 
-public class StoreTravelInsurancePage {
+public class ChoosePolicyTravelInsurancePage {
 
     WebDriver driver;
     @FindBy(xpath = "//div[contains(@class, 'online-card-program')]")
@@ -20,7 +20,7 @@ public class StoreTravelInsurancePage {
     WebElement takeOutInsuranceBtn;
 
 
-    public StoreTravelInsurancePage(WebDriver driver) {
+    public ChoosePolicyTravelInsurancePage(WebDriver driver) {
         PageFactory.initElements(driver, this);
         this.driver = driver;
     }

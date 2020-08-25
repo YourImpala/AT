@@ -9,7 +9,7 @@ import ru.sberbank.ex2.GeneralMethods;
 import java.util.HashMap;
 import java.util.Map;
 
-public class StoreTravelInsuranceFormPage {
+public class FormTravelInsurancePage {
     WebDriver driver;
     public Map<String, WebElement> fieldLocators = new HashMap<>();
 
@@ -54,7 +54,7 @@ public class StoreTravelInsuranceFormPage {
     @FindBy(xpath = "//div[@class='alert-form alert-form-error']")
     WebElement errorMessage;
 
-    public StoreTravelInsuranceFormPage(WebDriver driver) {
+    public FormTravelInsurancePage(WebDriver driver) {
         PageFactory.initElements(driver, this);
         this.driver = driver;
 
@@ -88,5 +88,9 @@ public class StoreTravelInsuranceFormPage {
 
     public String getErrorText() {
         return errorMessage.getText();
+    }
+
+    public WebElement getErrorMessage() {
+        return errorMessage;
     }
 }

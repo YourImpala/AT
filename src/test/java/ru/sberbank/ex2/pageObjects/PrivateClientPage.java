@@ -4,7 +4,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
 public class PrivateClientPage {
@@ -19,15 +18,15 @@ public class PrivateClientPage {
         this.driver = driver;
     }
 
-    public void clickInNavigation(String text) {
+    public void clickInNavigation(String menuItem) {
         navigation
-                .findElement(By.xpath(".//label[@class = ' kitt-top-menu__link kitt-top-menu__link_first  '][contains(text(), '" + text + "')]"))
+                .findElement(By.xpath(".//label[@class = ' kitt-top-menu__link kitt-top-menu__link_first  '][contains(text(), '" + menuItem + "')]"))
                 .click();
     }
 
-    public void clickDropdownLink(String text) {
+    public void clickDropdownLink(String menuItem) {
         navigation
-                .findElement(By.xpath(".//a[@class = 'kitt-top-menu__link kitt-top-menu__link_second'][contains(text(), '" + text +"')]"))
+                .findElement(By.xpath(".//a[@class = 'kitt-top-menu__link kitt-top-menu__link_second'][contains(text(), '" + menuItem +"')]"))
                 .click();
     }
 }
